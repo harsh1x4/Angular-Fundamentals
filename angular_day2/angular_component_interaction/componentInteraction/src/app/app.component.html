@@ -1,0 +1,23 @@
+<div class="globalarea">
+
+    <div style="height: 40px;width: 660px; background-color: aqua;">
+        <h1>
+            Welcome to {{title}}
+        </h1>
+
+        <br/><br/>
+
+        <h1 style="background-color: yellow;">
+            {{messageFromChild}}
+        </h1>
+    </div>
+
+    <!-- step-2 -->
+    <!-- <app-child [dataFromParent]="location"></app-child> -->
+
+    <br/><br/>
+
+    <app-child (childEvent)="messageFromChild=$event"></app-child>
+
+
+</div>

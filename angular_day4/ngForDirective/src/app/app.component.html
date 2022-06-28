@@ -1,0 +1,15 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>FirstName - LastName</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of users">
+                <h4 style="color: red;">Iterating users array</h4>
+                <td>{{u.firstName}} {{u.lastName}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

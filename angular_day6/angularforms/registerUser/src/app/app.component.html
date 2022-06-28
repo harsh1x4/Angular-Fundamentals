@@ -1,0 +1,50 @@
+<marquee>
+    <h2>Template Driven Form</h2>
+</marquee>
+
+<div id="div1">
+    <form #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+        <table style="width: 70%;" cellpadding="5" cellspacing="5">
+            <tr>
+                <td style="width: 40%;">
+                    <label for="username">User Name:</label>
+                </td>
+                <td style="width: 60%;">
+                    <input type="text" name="username" id="username" ngModel="username" required/>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <label for="email">Email:</label>
+                </td>
+                <td style="width: 60%;">
+                    <input type="text" name="email" id="email" ngModel="email" required/>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;">
+                    <label for="password">Password:</label>
+                </td>
+                <td style="width: 60%;">
+                    <input type="password" name="password" id="password" ngModel="password" required/>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40%;"></td>
+                <td style="width: 60%;">
+                    <button type="submit">Sign Up</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div *ngIf="showMessage">
+        <h1 style="color: green;">Thank You {{formData.username}} for registration</h1>
+        <h3>You have been provided with below details:</h3>
+        <ul>
+            <li>Your Email Id={{formData.email}}</li>
+            <li>Your Password={{formData.password}}</li>
+        </ul>
+    </div>
+
+</div>

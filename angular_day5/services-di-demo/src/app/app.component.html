@@ -1,0 +1,65 @@
+<div style="padding-left: 20px;">
+    <h1>Student Form</h1>
+
+    <table style="width: 80%;">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" [(ngModel)]="_model.name" /></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="number" [(ngModel)]="_model.age" /></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" [(ngModel)]="_model.city" /></td>
+        </tr>
+        <tr>
+            <td>DOB</td>
+            <td><input type="date" [(ngModel)]="_model.dob" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="Submit" (click)="submit()" />
+                <input type="button" value="Reset" (click)="reset()" />
+            </td>
+        </tr>
+    </table>
+
+
+    <h1>
+        <marquee style="color:red">Displaying Student Information</marquee>
+    </h1>
+
+    <h3>Student Details</h3>
+
+    <table style="width: 80%;">
+        <thead>
+            <tr>
+                <th style="width: 5%;">
+                    <span>Student Name</span>
+                </th>
+                <th style="width: 5%;">
+                    <span>Student Age</span>
+                </th>
+                <th style="width:5%;">
+                    <span>Student City</span>
+                </th>
+                <th style="width: 5%;">
+                    <span>Student DOB</span>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let item of _source ;let i=index">
+                <td><span>{{item.name}}</span></td>
+                <td><span>{{item.age}}</span></td>
+                <td><span>{{item.city}}</span></td>
+                <td><span>{{item.dob}}</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

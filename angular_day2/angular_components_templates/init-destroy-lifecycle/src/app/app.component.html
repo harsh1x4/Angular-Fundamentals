@@ -1,0 +1,16 @@
+<p>About Us</p>
+<input type="text" placeholder="Text here" #inputvalue/><br/><br/>
+
+<button (click)="submitValues(inputvalue)">HIT</button><br/><br/>
+
+<!-- <app-child [SomeValue]="value"></app-child> -->
+
+<app-child *ngIf="ComponentDestroy" [SomeValue]="value">This is added for checking ngAfterContentInitCheck {{value}}</app-child>
+
+<button (click)="destroy()" style="background-color: red;">Destroy Component</button>
+
+
+
+<!-- <app-child *ngIf="ComponentDestroy" [SomeValue]="value">This is added for checking ngAfterContentInitCheck {{value}}</app-child> -->
+
+<!-- <button (click)="destroy()" style="background-color: red;">Destroy Component</button> -->

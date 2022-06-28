@@ -1,0 +1,10 @@
+div {
+    width: 100%;
+    border: 2px solid red;
+    background-color: darkorange;
+}
+
+span {
+    color: black;
+    font-weight: bold;
+}

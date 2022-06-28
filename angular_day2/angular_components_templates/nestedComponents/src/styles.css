@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+table {
+    color: red;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid black;
+}

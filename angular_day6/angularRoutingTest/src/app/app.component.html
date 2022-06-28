@@ -1,0 +1,30 @@
+<marquee>
+    <h3 style="background-color: aqua;color: red;">Angular Routing used to develop single page applications. For Example: Gmail App where all the contents of specific tab(Primary/Social/Promotions/Updates/Forums) displayed in the same page.</h3>
+</marquee>
+<br>
+
+<marquee style="background-color: deeppink;">
+    <h4>
+        <p>About SPA : The single-page application (SPA) basically a web app whose all functionalities are framed on a single page where users can navigate different sections of the page by clicking on its dedicated links or buttons.
+        </p>
+
+        <p>
+            Feature of SPA : 1. Simple to use interface. The biggest advantage of creating a SPA is retaining the user’s focus on the web app. The user doesn’t need to navigate between pages hence the user experience is improved 2. No Page Refresh. In SPA, the resources
+            don’t need to get refreshed every time a user clicks on a different division of the page. 3. Code is rendered on the same page. SPA is the best when it comes to code optimization as all the HTML, CSS, and JS files are rendered on the same
+            page.
+        </p>
+    </h4>
+</marquee>
+
+<br>
+
+<div>
+    <span><a [routerLink]="['/home']">Home</a></span>&nbsp;&nbsp;&nbsp;
+    <span><a [routerLink]="['/aboutus']">About Us</a></span>&nbsp;&nbsp;&nbsp;
+    <span><a [routerLink]="['/contactus']">Contact Us</a></span>&nbsp;&nbsp;&nbsp;
+    <span><a [routerLink]="['/careers']">Careers</a></span>&nbsp;&nbsp;&nbsp;
+    <span><a [routerLink]="['/registration']">Registration</a></span>&nbsp;&nbsp;&nbsp;
+</div>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,43 @@
+
+
+Step-1: 
+=======
+
+Create a class decorated with @Injectable()
+@Injectable()
+export class ItemService {
+} 
+
+Step-2: 
+=======
+
+Configure service name in providers metadata with @NgModule in module file.
+@NgModule({
+  providers: [ItemService],
+})
+export class AppModule { }
+
+We can also use providedIn: 'root' attribute in @Injectable decorator to make available service globally.
+@Injectable({
+    providedIn: 'root'
+})
+export class ItemService {
+}
+
+
+Step-3: 
+=======
+
+Inject service in Component. When component is loaded, service will be injected by the injector
+
+@Component({
+   selector: 'store-app',
+   templateUrl: './store.component.html' 
+})
+export class StoreComponent { 
+   constructor(private itemService: ItemService) { }
+} 
+
+
+
+

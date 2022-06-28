@@ -1,0 +1,55 @@
+<marquee>Demonstration of Angular Pipes</marquee>
+
+<h1 style="background-color: yellow;color: red;">String Pipes</h1>
+<h1>{{firstName | lowercase}}</h1>
+<h1>{{firstName | uppercase}}</h1>
+<h1>{{title | titlecase}}</h1>
+
+
+
+<h1>{{title | slice:9}}</h1>
+<h1>{{title | slice:1:7}}</h1>
+
+<h1>{{studentObject | json}}</h1>
+
+
+
+
+<h1 style="background-color: aqua;color: red;">Number Pipes</h1>
+<h3 style="background-color: violet;">integer digits.decimal digits-max digits in decimal place</h3>
+<h1>{{.2 | number:'4.2-3'}}</h1>
+<h1>{{3.145 | number:'3.4-5'}}</h1>
+<h1>{{3.145 | number:'3.1-2'}}</h1>
+
+
+<h1 style="background-color: tomato;color: black;">Percentage Pipes</h1>
+<h1>{{0.97 | percent}}</h1>
+
+
+<h1 style="background-color: darkslateblue;color: black;">Currency Pipes</h1>
+<h1>{{0.23 | currency:'US'}}</h1>
+<h1>{{0.23 | currency:'INR'}}</h1>
+<h1>{{0.23 | currency:'INR'}}</h1>
+
+
+
+
+
+<h1 style="background-color: dodgerblue;color: black;">Date Pipes</h1>
+<h1>{{mydate}}</h1>
+
+
+<h1 style="background-color: yellow;">Short Date and Time</h1>
+<h1>{{mydate | date:'short'}}</h1>
+<h1>{{mydate | date:'shortDate'}}</h1>
+<h1>{{mydate | date:'shortTime'}}</h1>
+
+<h1 style="background-color: yellow;">Medium Date and Time</h1>
+<h1>{{mydate | date:'medium'}}</h1>
+<h1>{{mydate | date:'mediumDate'}}</h1>
+<h1>{{mydate | date:'mediumTime'}}</h1>
+
+<h1 style="background-color: yellow;">Long Date and Time</h1>
+<h1>{{mydate | date:'long'}}</h1>
+<h1>{{mydate | date:'longDate'}}</h1>
+<h1>{{mydate | date:'longTime'}}</h1>

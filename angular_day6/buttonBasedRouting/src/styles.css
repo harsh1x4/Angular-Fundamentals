@@ -1,0 +1,12 @@
+nav a.active {
+    color: blue;
+}
+
+nav a:hover {
+    color: blue;
+    background-color: gray;
+}
+
+.a {
+    background-color: yellow;
+}

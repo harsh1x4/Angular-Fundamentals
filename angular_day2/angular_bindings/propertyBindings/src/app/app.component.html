@@ -1,0 +1,36 @@
+<router-outlet>
+</router-outlet>
+
+
+<!-- First:<input [id]="empId" type="text" value="sun" /> Second:
+<input id="{{empId}}" type="text" value="sun" /> Third:
+
+<h3>General:</h3>
+<input disabled id="empId" type="text" value="sun" />
+
+
+<input disabled id="{{empId}}" type="text" value="sun" /> Fourth:
+<input disabled="false" id="{{empId}}" type="text" value="sun" /> Fifth:
+<input disabled="true" id="{{empId}}" type="text" value="sun" /> -->
+
+
+
+<!-- <h3>With Interpolation:</h3>
+<input disabled="{{false}}" id="{{empId}}" type="text" value="sun" />
+
+<h3>With Interpolation:</h3>
+<input disabled="{{true}}" id="{{empId}}" type="text" value="sun" /> -->
+
+
+<h3>Property Binding:</h3>
+<input [disabled]="false" id="{{empId}}" type="text" value="sun" />
+
+<h3>Property Binding:</h3>
+<input [disabled]="true" id="{{empId}}" type="text" value="sun" />
+
+
+<h3>Bind Hyphen:</h3>
+<input bind-disabled="false" id="{{empId}}" type="text" value="sun" />
+
+<h3>Bind Hyphen:</h3>
+<input bind-disabled="true" id="{{empId}}" type="text" value="sun" />

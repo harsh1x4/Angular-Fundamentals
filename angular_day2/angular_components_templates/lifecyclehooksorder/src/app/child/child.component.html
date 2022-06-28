@@ -1,0 +1,20 @@
+<h2 style="background-color: gray;">Child Component</h2>
+
+
+<br>
+<!-- Data as a input -->
+Message from Parent Through: @input {{message}}
+<br><br>
+
+<!-- Injected Content -->
+Message from Parent Through: Content Injection
+<ng-content></ng-content>
+
+
+<br><br>Code :
+<input type="text" name="code" [(ngModel)]="customer.code" autocomplete="off">
+
+<br><br> Name:
+<input type="text" name="name" [(ngModel)]="customer.name" autocomplete="off">
+
+<app-grand-child [customer]="customer"></app-grand-child>

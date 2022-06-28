@@ -1,0 +1,16 @@
+<h1>Technology-Use of ActivatedRoute to read the parameters and display them</h1>
+
+<!-- <div class="container back">
+    <ul class="items">
+        <li *ngFor="let tech of technologies">
+            <span class="badge">{{tech.tid}}</span>{{tech.name}}-{{tech.creator}}-{{tech.year}}
+        </li>
+    </ul>
+</div> -->
+
+
+<ul class="items">
+    <li (click)="onSelectTechnology(tech)" *ngFor="let tech of technologies">
+        <span class="badge-secondary">{{tech.tid}}</span>{{tech.creator}}
+    </li>
+</ul>

@@ -1,0 +1,19 @@
+<h1>
+    Welcome back!
+</h1>
+
+<h1 *ngIf="isLoggedIn; else elseblock">
+    Welcome guys,you have logged in successfully.
+</h1>
+
+<h1 *ngIf="isLoggedIn && isNewUser; else elseblock">
+    Welcome back, you are the new user here...visiting very first time.
+</h1>
+
+<h1 *ngIf="isLoggedIn || isNewUser; else elseblock">
+    Welcome back, you are the new user here...visiting very second time.
+</h1>
+
+<ng-template #elseblock>
+    <h3>Please login first...</h3>
+</ng-template>

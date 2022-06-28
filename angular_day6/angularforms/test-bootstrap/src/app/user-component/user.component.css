@@ -1,0 +1,19 @@
+table {
+    border-collapse: separate;
+    background-color: bisque;
+    width: 80%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

@@ -1,0 +1,27 @@
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>RollNumber</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Country</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let student of students'>
+                <td>{{student.rollNumber}}</td>
+                <td>{{student.firstName | uppercase}}</td>
+                <td>{{student.lastName | uppercase}}</td>
+                <td>{{student.country}}</td>
+                <td>{{student.location}}</td>
+            </tr>
+            <tr *ngIf="!students || students.length==0">
+                <td colspan="5">
+                    No records available
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>

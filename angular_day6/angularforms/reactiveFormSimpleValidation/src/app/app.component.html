@@ -1,0 +1,69 @@
+<div class="container-fluid">
+    <h1>Student Registration</h1>
+    <form [formGroup]="studentRegistration">
+
+        {{studentRegistration.value | json}}
+
+
+        <!-- <div class="form-group">
+            <label>Username</label>
+            <input [class.is-invalid]="studentRegistration.get('userName').invalid &&
+                                        studentRegistration.get('userName').touched" formControlName="userName" type="text" class="form-control" name="name"> -->
+        <!-- <small [class.d-none]="studentRegistration.get('userName').valid ||
+                                        studentRegistration.get('userName').untouched" class="text-danger">Username is required</small> -->
+
+        <!-- <div *ngIf="studentRegistration.get('userName').invalid && studentRegistration.get('userName').touched">
+                <small *ngIf="studentRegistration.get('userName').errors?.required" class="text-danger">Username is required</small>
+                <small *ngIf="studentRegistration.get('userName').errors?.minlength" class="text-danger">Username must be atleast 5 characters long</small>
+            </div> -->
+
+        <!-- </div> -->
+
+
+
+        <div class="form-group">
+            <label>Username</label>
+            <input [class.is-invalid]="userName.invalid &&
+                                        userName.touched" formControlName="userName" type="text" class="form-control" name="name">
+            <!-- <small [class.d-none]="userName.valid ||
+                                        userName.untouched" class="text-danger">Username is required</small> -->
+
+            <div *ngIf="userName.invalid && userName.touched">
+                <small *ngIf="userName.errors?.required" class="text-danger">Username is required</small>
+                <small *ngIf="userName.errors?.minlength" class="text-danger">Username must be atleast 5 characters long</small>
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+            <label>Password</label>
+            <input formControlName="password" type="password" class="form-control" name="pass">
+        </div>
+
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input formControlName="confirmPassword" type="password" class="form-control" name="cnfpass">
+        </div>
+
+
+        <div formGroupName="address">
+            <div class="form-group">
+                <label>City</label>
+                <input formControlName="city" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>State</label>
+                <input formControlName="state" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Location</label>
+                <input formControlName="location" type="text" class="form-control">
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Register</button>
+        <button (click)="loadData()" class="btn btn-secondary" type="button">LOAD DATA</button>
+
+    </form>
+</div>

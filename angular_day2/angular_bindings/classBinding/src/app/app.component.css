@@ -1,0 +1,19 @@
+.classRed {
+    color: red;
+}
+
+.classPink {
+    color: deeppink;
+}
+
+.classBlue {
+    color: blue;
+}
+
+.addFont {
+    font-style: italic;
+    font-family: Arial;
+    background-color: yellow;
+    border-radius: 220px;
+    border: 2px solid green;
+}

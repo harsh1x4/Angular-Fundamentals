@@ -1,0 +1,2 @@
+<!-- <app-child (childEvent)="messageFromChild=$event" [dataFromParent]="location"></app-child> -->
+

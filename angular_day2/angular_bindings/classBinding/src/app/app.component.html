@@ -1,0 +1,11 @@
+<h1>
+    Welcome to {{title}}</h1>
+
+<ul>
+    <li class='classPink' [class.classRed]="hasError">JAVA</li>
+    <li [class.classRed]="hasError">ANGULARJS</li>
+    <li>ANGULAR</li>
+    <li>SPRING BOOT</li>
+</ul>
+
+<h2 [ngClass]="multipleClasses">To apply multiple classes we use ngClass</h2>
